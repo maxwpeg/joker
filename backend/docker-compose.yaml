@@ -1,0 +1,13 @@
+version: '3.9'
+
+
+services:
+  joker_db:
+    container_name: joker_db
+    image: postgres:12
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_USER: manager
+      POSTGRES_PASSWORD: summer_school
+      POSTGRES_DB: joker
